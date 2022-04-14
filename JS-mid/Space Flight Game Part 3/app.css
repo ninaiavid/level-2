@@ -1,0 +1,10 @@
+body {
+    background-color: #223;
+    margin: 0;
+    overflow: hidden;
+}
+
+#screen {
+    background-color: #112;
+    margin: 0;
+}

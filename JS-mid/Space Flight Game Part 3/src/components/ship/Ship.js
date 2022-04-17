@@ -28,11 +28,9 @@ class Ship extends HasCoordinate{
     }
 
     fire() {
-        game.space.missiles.push(this.missiles[0])
-        this.missiles.shift()
-
-        game.space.missiles.forEach(missile => missile.visible = true)
-
+        let missile = this.missiles.shift()
+        missile.visible = true
+        return missile
         }
     
 }

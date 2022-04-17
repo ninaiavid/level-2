@@ -40,7 +40,8 @@ class Game {
                 this.space.ship.flyLeft()
                 break
             case 'Space':
-                this.space.ship.fire()
+                let missile = this.space.ship.fire()
+                this.space.missiles.push(missile)
                 break
         }
 

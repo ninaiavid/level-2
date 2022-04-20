@@ -38,10 +38,7 @@ class Game {
         if (collisions.length > 0) {
             this.gameOver()
         }
-        let collisionS = this.space.hitRocks()
-        if (collisionS.length > 0) {
-            this.gameOver()
-        }
+        this.space.hitRocks()
         this.render()
     }
 
